@@ -1,10 +1,12 @@
 const express = require('express')
 const app = express()
 const port = 5000
+require('dotenv').config()
+
 const db = require('./server');
 const votesRoutes = require('./src/routes/votesRoutes');
-const cors = require("cors")
 
+const cors = require("cors")
 app.use(express.json());
 app.use(express.urlencoded({extended: true}))
 app.use(cors("*"))
