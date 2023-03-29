@@ -8,5 +8,6 @@ router.get('/votes/:id', votesController.findVoteById);
 router.get('/wins/:name', votesController.findWinsByName);
 router.get('/rate/:name', votesController.findRateByName);
 router.get('/rate', votesController.findRates)
+router.get('/count', votesController.getCount)
 
 module.exports = router;

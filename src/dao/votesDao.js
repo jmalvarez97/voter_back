@@ -6,7 +6,8 @@ var votesDao = {
     findById: findById,
     findWinsByName: findWinsByName,
     findRateByName:findRateByName,
-    findRates: findRates
+    findRates: findRates,
+    getCount: getCount
 }
 
 function findAll() {
@@ -54,6 +55,10 @@ async function findRates(){
   
   return rate
 
+}
+
+function getCount(){
+  return Votes.count("*");
 }
 
 module.exports = votesDao;

@@ -6,7 +6,8 @@ var votesController = {
     findVoteById: findVoteById,
     findWinsByName: findWinsByName,
     findRateByName:findRateByName,
-    findRates: findRates
+    findRates: findRates,
+    getCount: getCount
 }
 
 function addVote(req, res) {
@@ -56,6 +57,12 @@ function findRateByName(req, res) {
 function findRates(req, res) {
     votesDao.findRates()
         .then((data) => res.send(data))
+        .catch((error) => console.log(error))
+}
+
+function getCount(req, res) {
+    votesDao.getCount()
+        .then((data) => res.send(data.toString()))
         .catch((error) => console.log(error))
 }
 
