@@ -1,7 +1,6 @@
 const { Sequelize, DataTypes } = require('sequelize');
 const db = require('../../server');
 
-
 const Votes = db.define('Votes', {
   id: {
     type: Sequelize.INTEGER,
@@ -18,6 +17,10 @@ const Votes = db.define('Votes', {
   },
   winner: {
     type: DataTypes.STRING,
+    allowNull: false
+  },
+  fanOf: {
+    type: Sequelize.STRING,
     allowNull: false
   }
 }, {
