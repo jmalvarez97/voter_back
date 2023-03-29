@@ -1,0 +1,40 @@
+/* Estilos para el encabezado */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Estilos para la sección de endpoints */
+  .endpoint {
+    margin-top: 50px;
+  }
+  
+  .endpoint h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .endpoint p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para las tablas de parámetros */
+  .params {
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .params th, .params td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+  
+  .params th {
+    font-weight: bold;
+    background-color: #f0f0f0;
+  }
+  

@@ -13,6 +13,9 @@ app.use(cors("*"))
 
 app.use('/api', votesRoutes);
 
+app.get('/', function(req, res) {
+  res.sendFile("./docs/api-doc.html", {root: "."});
+});
 
 db.authenticate().then(() => {
   console.log('Database connected...');
